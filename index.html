@@ -1,13 +1,66 @@
+
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width", initial-scale=1">
-<title>MI PRIMERA PAGINA CON BOOTSTRAP</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdc.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<nav></nav>
-<div class = "fondorojo"><img src= alt="el hombre de metal"/></div>
-<div class = "fondonegro">
-<h2>Si sabes como me pongo pa que me invitas</h2>
-<button type= "button"></button>
-</div>
-<div></div>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ejemplo de rejilla con 3 columnas</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+    /* Some custom styles to beautify this example */
+    .demo-content{
+        padding: 15px;
+        font-size: 18px;
+        min-height: 300px;
+        background: #dbdfe5;
+        margin-bottom: 10px;
+    }
+    .demo-content.bg-alt{
+        background: #abb1b8;
+		
+    }
+	.fondorojo{
+		background: red;
+		padding: 20px;
+		min-height 300px;
+		margin-bottom: 0px;
+		}
+	.fondonegro{
+		background: black;
+		margin-top: 0px;
+		padding-top: 0px;
+		}
+		
+	
+	
+</style>
+</head>
+
+<body>
+	<nav></nav>
+	<div class = "fondorojo"><img width = "350px" class = "img-circle" src="https://www.mundopeliculas.tv/wp-content/uploads/2018/03/shame.jpg" alt="el hombre de metal"/></div>
+	<div class = "fondonegro">
+		<h2>Si sabes como me pongo pa que me invitas</h2>
+		<button type= "button">Púlsame y no pasará nada</button>
+	</div>
+	<div>
+		<h2>Dónde encontrarme</h2>
+	<div class="container">
+        <!--Fila con 4 columnas-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="demo-content">.col-md-4</div>
+            </div>
+            <div class="col-md-4">
+            	<div class="demo-content bg-alt">.col-md-4</div>
+            </div>
+            <div class="col-md-4">
+            	<div class="demo-content">.col-md-4</div>
+            </div>
+        </div>
+        <hr>
+
+</body>
