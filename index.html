@@ -11,42 +11,89 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/hojaCss.css">
 	
-	<!--<style type="text/css">
-    /* Some custom styles to beautify this example */
-    .demo-content{
-        padding: 15px;
-        font-size: 18px;
-        min-height: 300px;
-        background: #dbdfe5;
-        margin-bottom: 10px;
-    }
-    .demo-content.bg-alt{
-        background: #abb1b8;
-		
-    }
-	.fondorojo{
-		background: red;
-		padding-bottom: 0px;
-		min-height 300px;
-		margin-bottom: -20px;
-		}
-	.fondonegro{
-		background: grey;
-		margin-top: 0px;
-		padding-top: 0px;
-		}
-		
-	-->
+	<script>
 	
-</style>
-</head>
+function ocultar_capa(id) {
+	var c = $capa('capa_menu_'+id);
+	if (c!=null) {
+		c.style.display="none";	
+	}	
+}
 
-<body>
+function mostrar_ocultar(id) {
+	console.log(id);
+	var c = $capa('capa_menu_'+id);
+	var tipo = c.style.display;
+	//alert(tipo);
+	if (tipo == 'block') {
+		c.style.display="none";
+		signo = '+';
+	} else {
+		c.style.display="block";
+		signo = '-';
+	}
+}		
+
+
+	</script>
+
+ </head>
+
+ <body>
+	<div>
 	<nav>
-	<ul>
-	<li>alfredo</li>
-	<li>di Stefano</li>
-	</ul>  
+		<ul>
+		 <li id="1_link" class="conhijos"><a href=>AGENDA</a>
+			<div class="submenu" id="capamenu1">
+			 <ul class="sub">
+			  <li>
+			   <a href=>Música</a>
+			  </li>
+			  <li>
+			   <a href=>Exposiciones</a>
+			  </li>
+			  <li>
+			   <a href=>Cultura</a>
+			  </li>
+			  <li>
+			   <a href=>Deportes</a>
+			  </li>
+			 </ul>
+			</div>
+		 </li>
+		 <li id="2_link" class="conhijos"><a href=>MAPA</a>
+			<div class="submenu" id="capamenu2">
+			 <ul class="sub">
+			  <li>
+			   <a href=>Museos</a>
+			  </li>
+			  <li>
+			   <a href=>Colaboradores</a>
+			  </li> 
+			 </ul>
+			</div>
+		 <li id="1_link" class="conhijos"><a href=>AGENDA</a>
+			<div class="submenu" id="capamenu1">
+			 <ul class="sub">
+			  <li>
+			   <a href=>Música</a>
+			  </li>
+			  <li>
+			   <a href=>Exposiciones</a>
+			  </li>
+			  <li>
+			   <a href=>Cultura</a>
+			  </li>
+			  <li>
+			   <a href=>Deportes</a>
+			  </li>
+			 </ul>
+			</div>
+		 </li>
+		 </li>
+		 
+		 
+		</ul>  
 	</nav>
 	<div class= "container-fluid text-center" "fondorojo"><img width = "350px" class = "img-circle" src="https://www.mundopeliculas.tv/wp-content/uploads/2018/03/shame.jpg" alt="el hombre de metal"/></div>
 	<div class = "fondonegro">
