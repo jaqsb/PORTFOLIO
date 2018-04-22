@@ -10,6 +10,9 @@
     
     
 }
+.enlaces{
+    font-size: 14px;
+}
 .navbar {
     position: relative;
     min-height: 50px;
@@ -77,3 +80,33 @@
 		margin-top: 0px;
 		padding-top: 0px;
 		}
+
+/* AGENDA*/
+
+.eventos {
+    background-color: grey;
+    }
+.carteles{
+    display: block; 
+    max-width: 100%;
+    width: auto;
+}
+
+
+
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+

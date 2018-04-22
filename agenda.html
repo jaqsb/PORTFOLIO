@@ -1,0 +1,145 @@
+	
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORIHUELA VIVA!</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/hojaCss.css">
+<link rel="stylesheet" type="text/js" href="js/javascript.js">
+
+</head>
+
+
+<body>
+    
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><img src="img/logo%20facebook%20oriviva.png" alt="logo" class="logo"/></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a class="enlaces" href="agenda.html">AGENDA</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> MAPA
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="mapamuseos.html">Museos</a></li>
+          <li><a href="mapacolaboradores.html">Colaboradores</a></li>
+        </ul>
+      </li>
+      <li><a href="orihuela.html" class="enlaces">ORIHUELA</a></li>
+      <li><a href="colaboradores.html"class="enlaces">COLABORADORES</a></li>
+      <li><a href="nosotros.html"class="enlaces">NOSOTROS</a></li>
+    </ul>
+  </div>
+</nav>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#mostrarTodo").click(function(){
+        $(".musica").fadeTo(1000,1);
+        $(".cultura").fadeTo(1000,1);
+        $(".deporte").fadeTo(1000,1);
+        
+        
+    });
+    
+    $("#mostrarMusica").click(function(){
+        $(".musica").fadeTo(1000,1);
+        $(".cultura").fadeTo(1000,0.4);
+        $(".deporte").fadeTo(1000,0.4);
+        $("#agendageneral").text("Conciertos y eventos musicales");
+        
+    });
+    $("#mostrarCultura").click(function(){
+        $(".cultura").fadeTo(1000,1);
+        $(".musica").fadeTo(1000,0.4);
+        $(".deporte").fadeTo(1000,0.4);
+        $("#agendageneral").text("Eventos Socio-culturales");
+        
+    });
+    $("#mostrarDeporte").click(function(){
+        $(".deporte").fadeTo(1000,1);
+        $(".musica").fadeTo(1000,0.4);
+        $(".cultura").fadeTo(1000,0.4);
+        $("#agendageneral").text("Eventos Deportivos");
+        
+    });
+});
+</script>
+    
+    <h1 id="agendageneral">Agenda</h1>
+
+<div class= "container-fluid">
+    <div class="row">
+    <input type="button" id="mostrarTodo" name="boton0" value="General">
+    <input type="button" id="mostrarMusica" name="boton1" value="Música">
+    <input type="button" id="mostrarCultura" name="boton2" value="Cultura">
+    <input type="button" id="mostrarDeporte" name="boton3" value="Deporte">
+    </div>
+</div>
+    <!-- PRIMERA FILA -->
+    <div class="container">
+        
+     <div class="row">
+        <div class="col-md-4">
+            <div class="demo-content cultura">
+                <img src= "img/oliver.jpg" alt="oliver twist" class="carteles cultura"/>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="demo-content musica">
+                <img src= "img/voces.jpg" alt="voces armenias" class="carteles"/>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="demo-content cultura" >
+                <img src= "img/encuentrospoesia.jpg" alt="Encuentros con la poesia" class="carteles" />
+            </div>
+        </div>
+     </div>
+    <!-- SEGUNDA FILA -->    
+     <div class="row">
+         <div class="col-md-4">
+            <div class="demo-content cultura">
+                <img src= "img/despuesamor.jpg" alt="voces armenias" class="carteles"/>
+                <h1>Charla</h1>
+                <h2>Después del Amor</h2>
+                
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="demo-content deporte">
+                <img src= "img/derby.jpg" alt="derby" class="carteles"/>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="demo-content musica">
+                <img src= "img/moonshine.jpg" alt="moonshine" class="carteles"/>
+            </div>
+         </div>
+     </div>
+    <!-- TERCERA FILA -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="demo-content musica">
+                <img src= "img/miguelhernandez.jpg" alt="moonshine" class="carteles"/>
+                <h2>Paseo Turístico Hernandiano </h2>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="demo-content">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="demo-content">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
